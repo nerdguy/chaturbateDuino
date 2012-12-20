@@ -22,7 +22,7 @@ Note: You will have to 'Force Quit' the app in order to close it.
 ### Notes
 
 1. the default handler assumes a pwm connected to pin 3.
-2. Feel free to modify the handler to suit your needs :)
+2. Feel free to fork and modify the handler to suit your needs :)
 
 ## License
 
