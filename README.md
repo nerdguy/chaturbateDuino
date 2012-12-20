@@ -19,7 +19,11 @@ Note: You will have to 'Force Quit' the app in order to close it.
 5. Set a Goal and hit the 'enter' key
 6. when you're done, change the dropdown menu back to 'select port' to reset the board and its pins.
 
-Notes:
+### Notes
 
 1. the default handler assumes a pwm connected to pin 3.
 2. Feel free to modify the handler to suit your needs :)
+
+## License
+
+MIT License.
