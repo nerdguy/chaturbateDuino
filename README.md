@@ -6,7 +6,7 @@ a userscript to make Arduino interact with Chaturbate
 ## Installation:
 
 1. Install TamperMonkey for Chrome from https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-2. Open this script URL with Chrome: https://raw.github.com/nerdguy/chaturbateDuino/master/chaturbateduino_testbed.user.js
+2. Open the script URL with Chrome: https://raw.github.com/nerdguy/chaturbateDuino/master/chaturbateduino_testbed.user.js
 Chrome should ask you if you want to use the script with TamperMonkey. click 'ok'
 3. Download or install the local server from https://github.com/nerdguy/httpfirmata
 
