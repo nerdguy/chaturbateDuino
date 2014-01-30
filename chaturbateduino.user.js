@@ -1,14 +1,16 @@
 // ==UserScript==
 // @name       Chaturbate
 // @namespace  http://use.i.E.your.homepage/
-// @version    0.1
+// @version    0.2
 // @description  enter something useful
+// @match http://testbed.chaturbate.com/*
 // @match http://chaturbate.com/*
 // @copyright  2012+, Nerdguy
 // ==/UserScript==
+
 var main = function () {
     var settings = {
-        API_ROOT: 'http://127.0.0.1:8000/',
+        API_ROOT: 'http://127.0.0.1:8000/v2/',
         PIN: 3,
         CURRENT: 0
     };
@@ -39,14 +41,14 @@ var main = function () {
                     settings.BOARD = data['pk']
                     settings.URL = settings.API_ROOT + 'boards/'+ settings.BOARD + '/' + settings.PIN + '/';
                     $('#firmataPort').removeAttr('disabled');
-                  goal = $('<p><label for="firmataGoal">Goal</label> <input type="integer" id="firmataGoal"></input></p>');
-    	            $('#firmataGoal', goal).change(function(e) {
+                    goal = $('<p><label for="firmataGoal">Goal</label> <input type="integer" id="firmataGoal"></input></p>');
+                    $('#firmataGoal', goal).change(function(e) {
                         val = $(this).val();
                         if (val !== undefined && val != '') {
-            	        	settings.GOAL = parseInt($(this).val());
+                            settings.GOAL = parseInt($(this).val());
                         }
-            	    });
-	                $('#firmata').append(goal);
+                    });
+                    $('#firmata').append(goal);
                 }
             });
         }
